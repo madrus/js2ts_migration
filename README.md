@@ -18,4 +18,10 @@ Link to TypeScript playground: http://www.typescriptlang.org/Playground
 - If necessary, switch to the same folder as tsd.json (in this case to the project folder)
 - Run tsd reinstall -so
 
+#### Possibly reinstall the NuGet deps
+- jquery
+- bootstrap
+- big.js
+- knockoutjs
+
 To build and run unit tests, run grunt

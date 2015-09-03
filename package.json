@@ -1,12 +1,12 @@
 {
-  "name": "coincountergame",
+  "name": "CoinCounterGame",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andre Roussakoff",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "grunt": "^0.4.5",
     "qunitjs": "^1.19.0"
