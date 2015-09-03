@@ -18,7 +18,7 @@ module.exports = function (grunt) {
                     "CoinCounterGame/Scripts/jquery-2.1.4.min.js",
                     "CoinCounterGame/Scripts/big.min.js",
                     "CoinCounterGame/Scripts/bootstrap.min.js",
-                    "CoinCounterGame/Scripts/knockout-3.3.0.debug.js"
+                    "CoinCounterGame/Scripts/knockout-3.3.0.js"
                 ],
                 dest: "CoinCounterGame/Built/vendor.js"
             }
@@ -35,15 +35,15 @@ module.exports = function (grunt) {
         qunit: {
             default: {
                 options: {
-                    urls: ["http://localhost:8000/tests/tests.html"]
+                    urls: ["http://localhost:11111/tests/tests.html"]
                 }
             }
         },
         connect: {
             default: {
                 options: {
-                    port: 8000,
-                    base: "."
+                    port: 11111,
+                    base: "./CoinCounterGame"
                 }
             }
         }
@@ -51,7 +51,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-ts");
     grunt.loadNpmTasks("grunt-contrib-concat");
     grunt.loadNpmTasks("grunt-contrib-uglify");
-    grunt.loadNpmTasks("grunt-contrib-gunit");
+    grunt.loadNpmTasks("grunt-contrib-qunit");
     grunt.loadNpmTasks("grunt-contrib-connect");
     grunt.registerTask("default", ["ts", "concat", "uglify", "connect", "qunit"]);
 };
