@@ -2,11 +2,12 @@ module.exports = function (grunt) {
     grunt.initConfig({
         ts: {
             default: {
-                src: [
-                    "**/*.ts",
-                    "!node_modules/**/*.ts",
-                    "!packages/**/*.ts"
-                ],
+                //src: [
+                //    "**/*.ts",
+                //    "!node_modules/**/*.ts",
+                //    "!packages/**/*.ts"
+                //],
+                vs: "CoinCounterGame/CoinCounterGame.csproj",
                 options: {
                     comments: true // copy comments to the target js files
                 }

@@ -99,10 +99,7 @@
     <TypeScriptCompile Include="globals.ts" />
     <TypeScriptCompile Include="highScore.ts" />
     <TypeScriptCompile Include="index.ts" />
-    <TypeScriptCompile Include="Scripts\typings\big.js\big.js.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\bootstrap\bootstrap.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\knockout\knockout.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="coinCounterViewModel.ts" />
@@ -117,7 +114,6 @@
     <Content Include="Scripts\knockout-3.3.0.debug.js" />
     <Content Include="Scripts\knockout-3.3.0.js" />
     <Content Include="tests\tests.html" />
-    <TypeScriptCompile Include="Scripts\typings\qunit\qunit.d.ts" />
     <TypeScriptCompile Include="tests\gameclocktests.ts" />
     <None Include="readme.md" />
     <Content Include="Web.config" />
